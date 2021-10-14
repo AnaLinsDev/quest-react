@@ -14,8 +14,8 @@ class App extends React.Component {
       <Router>
       <Switch>
           <Route path='/quest-react'        component={HomePage} />
-          <Route path='/confirm/:quant'     component={ConfirmPage}/>
-          <Route path='/questions/:quant'   component={QuestionsPage} />
+          <Route path='/confirm'            component={ConfirmPage}/>
+          <Route path='/questions'          component={QuestionsPage} />
           <Route path='/report'             component={ReportPage} />
           <Route component={ErrorPage}  />
       </Switch>

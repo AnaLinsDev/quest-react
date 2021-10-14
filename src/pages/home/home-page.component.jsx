@@ -10,8 +10,6 @@ import { addQuant } from '../../redux/quests/quests.actions';
 function HomePage({addQuant}) {
 
   const [isNumber, setIsNumber] = useState(true)
-  const [path, setPath] = useState("/confirm/0")
-
 
   const handleChange = (event) => {
     const value =  event.target.value 
@@ -24,7 +22,6 @@ function HomePage({addQuant}) {
     else{
       setIsNumber(true);
       addQuant(value)
-      setPath("/confirm/" + value);
     }
   }
 
@@ -45,7 +42,7 @@ function HomePage({addQuant}) {
 
             <Link 
             className="positive-button" 
-            to={path} >
+            to={"/confirm"} >
               Vamos lá !
             </Link>
 

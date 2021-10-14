@@ -2,26 +2,27 @@ import './confirm-page.styles.scss';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+//redux
+import { connect } from 'react-redux';
+
 
 class ConfirmPage extends React.Component {
     constructor(props){
     super(props)
 
-    this.state = {
-        quant : props.match.params.quant,
-        path : "/confirm/0"
-    }
     }
     
     render() {
 
+        const { quant } = this.props
+
         return (
             <div className="card">
-                Quantidade de perguntas : {this.state.quant}. <br />
+                Quantidade de perguntas : {quant}. <br />
                 <br />
                 <div className="confirm-page-buttons">
-                    <Link className="positive-button" to={"/questions/" + this.state.quant} >Start</Link>
-                    <Link className="negative-button" to="/" >Cancel</Link> 
+                    <Link className="positive-button" to={"/questions"} >Start</Link>
+                    <Link className="negative-button" to="/quest-react" >Cancel</Link> 
                 </div>
             </div> 
 
@@ -29,4 +30,9 @@ class ConfirmPage extends React.Component {
     }
 }
 
-export default ConfirmPage;
+const mapStateToProps = state => ({
+    quant : state.quests.quant
+    })
+
+  export default connect(mapStateToProps)(ConfirmPage)
+  
