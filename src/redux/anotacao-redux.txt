@@ -1,0 +1,12 @@
+
+fluxo para apenas pegar:
+    seletor será chamado pelo usuario 
+    e retornará a parte do state solicitada .
+
+
+fluxo com ações:
+    1- action será chamado pelo usuario .
+    2- root-reducer -> reducer específico .
+    3- o reducer poderá usar enums e utils para
+       simplificar o código e deixá-lo mais limpo 
+       e preciso.

@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import HomePage from './pages/home/home-page.component';
+import QuestionsPage from './pages/questions/questions-page.component';
+import ReportPage from './pages/report/report-page.component';
+import ErrorPage from './pages/error/error-page.component';
+import ConfirmPage from './pages/confirm/confirm-page.component';
 
-function App() {
-  return (
+class App extends React.Component {
+  render() {
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/confirm/:quant' component={ConfirmPage}/>
+          <Route path='/questions/:quant' component={QuestionsPage} />
+          <Route path='/report' component={ReportPage} />
+          <Route component={ErrorPage}  />
+      </Switch>
+      </Router>
     </div>
-  );
+    )
+  }
 }
 
 export default App;

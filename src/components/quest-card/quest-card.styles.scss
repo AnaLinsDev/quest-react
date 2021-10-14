@@ -1,0 +1,32 @@
+
+.quest-card{
+    font-size: 20px;
+    background-color: rgba(245, 245, 245, 0.719);
+    margin: 15px 10%;
+    padding: 40px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+
+    .info-quest-card{
+
+        .difficulty{
+            float: right;
+            padding: 10px;
+            margin: 10px;
+            border:5px solid rgba(27, 233, 147, 0.89);
+            border-radius: 30px;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: right;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .quest-card{
+        margin: 5px 0%;
+        font-size: 1rem;
+    }
+}

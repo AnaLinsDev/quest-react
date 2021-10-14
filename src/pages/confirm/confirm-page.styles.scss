@@ -1,0 +1,14 @@
+.card{
+    font-size: 25px;
+    text-align: center;
+
+    .confirm-page-buttons{
+        margin-top: 15%;
+        text-align: center;
+
+        :nth-child(n){
+            margin:20px;
+        }
+
+    }
+}
