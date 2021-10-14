@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/quest-react/static/css/main.d6f436c7.chunk.css",
-    "main.js": "/quest-react/static/js/main.5fedca5e.chunk.js",
-    "main.js.map": "/quest-react/static/js/main.5fedca5e.chunk.js.map",
+    "main.js": "/quest-react/static/js/main.0b875176.chunk.js",
+    "main.js.map": "/quest-react/static/js/main.0b875176.chunk.js.map",
     "runtime-main.js": "/quest-react/static/js/runtime-main.b500f577.js",
     "runtime-main.js.map": "/quest-react/static/js/runtime-main.b500f577.js.map",
     "static/js/2.37b30cab.chunk.js": "/quest-react/static/js/2.37b30cab.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b500f577.js",
     "static/js/2.37b30cab.chunk.js",
     "static/css/main.d6f436c7.chunk.css",
-    "static/js/main.5fedca5e.chunk.js"
+    "static/js/main.0b875176.chunk.js"
   ]
 }
